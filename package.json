@@ -1,0 +1,28 @@
+{
+  "name": "jitu-googlecharts",
+  "version": "0.0.1",
+  "description": "Google Charts rendering Node API",
+  "author": "Jitendriya Sendha <jitendriyag2a@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "bin": "NODE_ICU_DATA=node_modules/full-icu node bin/node-googlecharts",
+    "example": "NODE_ICU_DATA=node_modules/full-icu node examples/ColumnChart",
+    "test": "NODE_ICU_DATA=node_modules/full-icu mocha"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsdom": "^9.2.1",
+    "lodash.isplainobject": "^4.0.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "full-icu": "^1.0.3",
+    "mocha": "^7.1.1"
+  }
+}
